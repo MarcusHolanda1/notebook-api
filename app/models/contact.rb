@@ -5,6 +5,7 @@ class Contact < ApplicationRecord
   has_one :address
 
   accepts_nested_attributes_for :phones, allow_destroy:true
+  accepts_nested_attributes_for :address
 
   #def birthdate_br
   #self.birthdate
