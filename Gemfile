@@ -5,6 +5,7 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
+gem 'rails-i18n', '~> 5.1' # I18n tradução e pa
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -31,6 +32,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Genarating fake data such as names, addresses and phone numbers.
+  gem 'faker'
+  #Gem pry initializier
+  gem 'pry-rails'
 end
 
 group :development do
@@ -39,7 +44,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   # This gem is a port of Perl's Data::Faker library that generates fake data.
-  gem 'faker'
+
 end
 
 
